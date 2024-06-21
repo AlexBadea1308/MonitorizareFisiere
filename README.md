@@ -22,3 +22,19 @@
 # 20.06.2024
 
 # Am inceput sa creez structura proiectului: am realizat un main script care contine un meniu cu toate optiunile prezentate mai sus, un script de config unde am mai multe variabile de care ma voi folosi in alte scripturi create in viitor si primele doua functionalitati ale proiectului si anume monitorizarea unui director (doar el) si a directorului impreuna cu subdirectoarele sale. 
+
+# 21.06.2024
+
+# Am reusit sa implementez functia de send_mail.sh prin efectuarea mai multor pasi:
+# -am instalat tool ul de ssmtp
+# - am configurat fisierul /etc/ssmtp/ssmtp.conf pentru a putea transmite emailuri de pe o adresa stabila (un cont creat special pentru proiect )
+# -root=postmaster
+# -mailhub=smtp.gmail.com:587
+# -AuthUser=ssmtptest13@gmail.com
+# -AuthPass=adbgljmabvofuqan
+# -UseSTARTTLS=YES
+# -FromLineOverride=YES
+# -am acordat permisiuni de executie pentru acest fisier
+
+# -de asemenea am implementat functia de generate_raport care afiseaza evenimentele care au avut loc asupra unui director intr un format mai ordonat
+

@@ -47,3 +47,13 @@
 # am realizat script pentru a opera cu meniu al bazei de date in care practic vom executa querry-uri basic (add,delete,view)
 # am adaugat un fisier in care am atribuit link uri care m au ajutat sa invat aceste noi tool-uri;
 
+# 25.06.2024
+
+# Am inceput sa lucrez la interfata grafica a proiectului. Am folosit python3 ca si interpretor al limbajului Python si PyQt5 pentru a realiza mult mai usor interfata grafica (PyQt5 este un set de legaturi Python pentru Qt)
+
+# sudo apt install python3-pip
+# pip install PyQt5
+# sudo apt install python3
+
+# Interfata grafica va contine in totalitate aceleasi optiuni pe care scriptul le are atunci cand il rulam in terminal, doar ca optiunile vor fi constituite de niste butoane, fiecare fiind conectate la o fereastra in care vom putea vedem modificarile care au loc asupra unui director selectat.
+

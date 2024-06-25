@@ -38,3 +38,12 @@
 
 # -de asemenea am implementat functia de generate_raport care afiseaza evenimentele care au avut loc asupra unui director intr un format mai ordonat
 
+# 22.06.2024-24.06.2024
+
+# In aceste trei zile am studiat mai multe proprietati ale lui sqlite3 pe care l am folosit in scopul stocarii evenimentelor executate asupra unui director atunci cand rulam comanda inotify-tools
+
+# am realizat crearea bazei de date in scriptul create_database precum si a tabelelor necesare;
+# am realizat scriptul care adauga in baza de date toate modificarile care au loc asupra directorului mentionat;
+# am realizat script pentru a opera cu meniu al bazei de date in care practic vom executa querry-uri basic (add,delete,view)
+# am adaugat un fisier in care am atribuit link uri care m au ajutat sa invat aceste noi tool-uri;
+

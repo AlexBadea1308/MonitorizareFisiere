@@ -56,4 +56,3 @@
 # sudo apt install python3
 
 # Interfata grafica va contine in totalitate aceleasi optiuni pe care scriptul le are atunci cand il rulam in terminal, doar ca optiunile vor fi constituite de niste butoane, fiecare fiind conectate la o fereastra in care vom putea vedem modificarile care au loc asupra unui director selectat.
-

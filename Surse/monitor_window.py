@@ -61,45 +61,4 @@ class MonitorWindow(QMainWindow):
         self.text_edit.append(text)
         self.text_edit.verticalScrollBar().setValue(self.text_edit.verticalScrollBar().maximum())
 
-class MainWindow(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Meniu Principal")
-        self.setGeometry(100, 100, 300, 400)
 
-        self.setStyleSheet("""
-            QMainWindow {
-                background-color: black;
-            }
-            QPushButton {
-                background-color: blue;
-                color: black;
-                font-size: 16px;
-                padding: 10px;
-                border-radius: 5px;
-            }
-        """)
-
-        layout = QVBoxLayout()
-
-        self.monitor_button = QPushButton("Monitorizare director")
-        self.monitor_button.clicked.connect(self.select_directory)
-        layout.addWidget(self.monitor_button)
-
-        container = QWidget()
-        container.setLayout(layout)
-        self.setCentralWidget(container)
-
-    def select_directory(self):
-        directory = QFileDialog.getExistingDirectory(self, "Selecteaza un director")
-        if directory:
-            script = "path_to_your_script.sh"
-            self.monitor_window = MonitorWindow()
-            self.monitor_window.start_monitoring(script, directory)
-            self.monitor_window.show()
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = MainWindow()
-    window.show()
-    sys.exit(app.exec_())

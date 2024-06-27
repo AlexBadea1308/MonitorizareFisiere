@@ -9,7 +9,7 @@ source ./config.sh $1
 
 echo "Director monitorizat: $MONITORED_DIR"
 
-sudo inotifywait -t $REPORT_INTERVAL -m -e $EVENTS --format '%w%f %e %T' --timefmt '%Y-%m-%d %H:%M:%S' "$MONITORED_DIR" | while read FILE EVENT TIMESTAMP
+inotifywait -t $REPORT_INTERVAL -m -e $EVENTS --format '%w%f %e %T' --timefmt '%Y-%m-%d %H:%M:%S' "$MONITORED_DIR" | while read FILE EVENT TIMESTAMP
 do
 echo "$FILE" "$EVENT" "$TIMESTAMP" | sudo tee --append "$LOG_FILE" >/dev/null
 echo "$FILE" "$EVENT" "$TIMESTAMP"

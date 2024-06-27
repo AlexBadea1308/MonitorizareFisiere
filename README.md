@@ -56,3 +56,7 @@
 # sudo apt install python3
 
 # Interfata grafica va contine in totalitate aceleasi optiuni pe care scriptul le are atunci cand il rulam in terminal, doar ca optiunile vor fi constituite de niste butoane, fiecare fiind conectate la o fereastra in care vom putea vedem modificarile care au loc asupra unui director selectat.
+
+# 27.06.2024
+
+# Am reusit sa termin si meniul pentru optiunile bazei de date. A realizat optiunile de view_events si view_comments. Pentru operatiunile de add si delete an reusit sa implementez sa afiseze ferestrele in care sa adauge campurile necesare operatiunii insa nu are efect asupra bazei de date, deoarece trebuie modificate scripturile de add si delete.
